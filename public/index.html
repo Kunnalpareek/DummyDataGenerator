@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy data generator</title>
+</head>
+<body>
+    <h2>Here it's working!</h2>
+    <form action="/"  method="post">
+        <button type="submit">Generate</button>
+    </form>
+
+</body>
+<script>
+    const button = document.querySelector("button");
+    button.addEventListener("click",()=>{
+        if(button.innerText === "Generate"){
+            button.innerText = "Delete";
+        }
+        else{
+            button.innerText = "Generate";
+        }
+    })
+</script>
+</html>
